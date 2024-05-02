@@ -1,4 +1,4 @@
-package com.grupoa.pastelaria.domain.model;
+package com.example.demo.model;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
@@ -9,9 +9,6 @@ import java.util.List;
 
 @Table(name = "TB_INGREDIENTE")
 @Entity
-@Data
-@AllArgsConstructor
-@NoArgsConstructor
 public class Ingrediente {
 
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -33,5 +30,56 @@ public class Ingrediente {
         this.id = id;
         this.nome = nome;
         this.descricao = descricao;
+    }
+
+    public Ingrediente(Long id, String nome, String descricao, boolean ativo, List<Pastel> pasteis) {
+        this.id = id;
+        this.nome = nome;
+        this.descricao = descricao;
+        this.ativo = ativo;
+        this.pasteis = pasteis;
+    }
+
+    public Ingrediente() {
+    }
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public String getDescricao() {
+        return descricao;
+    }
+
+    public void setDescricao(String descricao) {
+        this.descricao = descricao;
+    }
+
+    public boolean isAtivo() {
+        return ativo;
+    }
+
+    public void setAtivo(boolean ativo) {
+        this.ativo = ativo;
+    }
+
+    public List<Pastel> getPasteis() {
+        return pasteis;
+    }
+
+    public void setPasteis(List<Pastel> pasteis) {
+        this.pasteis = pasteis;
     }
 }

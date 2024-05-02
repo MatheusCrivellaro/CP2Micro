@@ -1,7 +1,7 @@
-package com.grupoa.pastelaria.controller;
+package com.example.demo.controller;
 
-import com.grupoa.pastelaria.domain.model.Ingrediente;
-import com.grupoa.pastelaria.repository.IngredienteRepository;
+import com.example.demo.model.Ingrediente;
+import com.example.demo.repository.IngredienteRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;

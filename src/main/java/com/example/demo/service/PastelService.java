@@ -1,11 +1,11 @@
-package com.grupoa.pastelaria.service;
+package com.example.demo.service;
 
-import com.grupoa.pastelaria.domain.model.Ingrediente;
-import com.grupoa.pastelaria.domain.model.Massa;
-import com.grupoa.pastelaria.domain.model.Pastel;
-import com.grupoa.pastelaria.repository.IngredienteRepository;
-import com.grupoa.pastelaria.repository.MassaRepository;
-import com.grupoa.pastelaria.repository.PastelRepository;
+import com.example.demo.model.Ingrediente;
+import com.example.demo.model.Massa;
+import com.example.demo.model.Pastel;
+import com.example.demo.repository.IngredienteRepository;
+import com.example.demo.repository.MassaRepository;
+import com.example.demo.repository.PastelRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

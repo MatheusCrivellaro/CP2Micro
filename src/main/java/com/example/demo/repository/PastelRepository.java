@@ -1,8 +1,8 @@
-package com.grupoa.pastelaria.repository;
+package com.example.demo.repository;
 
-import com.grupoa.pastelaria.domain.model.Ingrediente;
-import com.grupoa.pastelaria.domain.model.Massa;
-import com.grupoa.pastelaria.domain.model.Pastel;
+import com.example.demo.model.Ingrediente;
+import com.example.demo.model.Massa;
+import com.example.demo.model.Pastel;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.List;
