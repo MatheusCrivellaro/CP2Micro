@@ -34,6 +34,7 @@ public class MassaController {
 
     @PostMapping
     public String save(Massa massa) {
+        massa.setAtivo(true);
         repository.save(massa);
         return "redirect:/massa";
     }

@@ -36,6 +36,7 @@ public class PastelService {
         pastel.setIngredientes(ingredientes);
         pastel.setMassa(massaRepository.findByNomeAndAtivoTrue(massa).orElseThrow());
         pastel.setQuantidade(quantidade);
+        pastel.setAtivo(true);
         repository.save(pastel);
     }
 
